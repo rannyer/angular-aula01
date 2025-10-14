@@ -1,0 +1,56 @@
+.card{
+    width: 280px;
+    height: 430px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 3px 4px 20px rgba(23, 23, 23, 0.239);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card img{
+    width: 280px;
+}
+
+.card .nome{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.card .categorias{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.card .material{
+    width: fit-content;
+    background-color: rgb(235, 235, 235);
+    padding: 5px;
+    color: rgb(61, 61, 61);
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transform: scale(0.9);
+    margin: 0;
+
+}
+
+.card .preco{
+    text-align: center;
+    letter-spacing: 1px;
+    color: green;
+    font-style: italic;
+}
+
+.card .comprar{
+    width: 100px;
+    align-self: center;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    cursor: pointer;
+}

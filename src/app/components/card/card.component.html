@@ -1,0 +1,9 @@
+<div class="card">
+    <img [src]="produto.img" alt="">
+    <p class="nome">{{produto.nome}} - {{produto.marca}}</p>
+    <div class="categorias">
+        <p class="material" *ngFor="let cat of produto.categorias">{{cat}}</p>
+    </div>
+    <p class="preco">R$ {{produto.preco}}</p>
+    <button class="comprar">Comprar</button>
+</div>
