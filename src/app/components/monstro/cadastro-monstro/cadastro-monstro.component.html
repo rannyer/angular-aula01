@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>MONSTROS</h1>
+
+    <div class="form">
+        <p>Nome</p>
+        <input type="text" [(ngModel)]="novoMonstro.nome">
+        
+        <p>Tipo</p>
+        <select [(ngModel)]="novoMonstro.tipo">
+            <option [value]="t" *ngFor="let t of tipos">{{t}}</option>
+        </select>
+
+        <p>Nível</p>
+        <input type="number" [(ngModel)]="novoMonstro.nivel">
+        
+        <p>Habitat</p>
+        <input type="text" [(ngModel)]="novoMonstro.habitat">
+        <br> <br>
+        
+        <label for="">
+            <input type="checkbox" [(ngModel)]="novoMonstro.ativo">
+            Ativo
+        </label>
+
+        <button (click)="salvarMonstro()">Salvar</button>
+    </div>
+
+    <h2>Monstros Cadastrados</h2>
+    <div class="lista" *ngIf="monstros.length > 0">
+        <app-card-monstro  *ngFor="let m of monstros" [monstro]="m"/> 
+    </div>
+</div>

@@ -1,0 +1,32 @@
+
+<div class="container-cadastro">
+    <h1>Cadastro Produtos</h1>
+
+    <div class="form">
+        <label>Nome</label>
+        <input [(ngModel)]="nome" type="text" placeholder="Ex: Monitor Angular">
+        
+        <br>
+        
+        <label>Preço</label>
+        <input [(ngModel)]="preco" type="number" placeholder="Ex: R$ 30">
+        
+        <br>
+
+        <label>Categoria</label>
+        <input [(ngModel)]="categoria" type="text" placeholder="Ex: hardware">
+        
+        <br>
+
+        <label>Cargo</label>
+        <select name="" id="" [(ngModel)]="cargo" >
+            <option  [value]="c.id" *ngFor="let c of cargos" >{{c.nome}}</option>
+        </select>
+
+        <input type="color" ng>
+
+        
+
+        <!-- <button (click)=""></button> -->
+    </div>
+</div>
