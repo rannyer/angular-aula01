@@ -1,0 +1,17 @@
+
+.lista-funcionarios{
+    display: flex;
+    gap: 10px;
+}
+.funcionario{
+    border: 2px solid black;
+    width: 100px;
+    padding: 10px;
+}
+
+.ativo{
+    background-color: rgb(90, 196, 90);
+}
+.inativo{
+    background-color: rgb(207, 83, 83);
+}

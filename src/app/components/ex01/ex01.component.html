@@ -1,0 +1,20 @@
+<div class="container-ex01">
+    <h1>{{titulo}}</h1>
+
+    <div class="lista-funcionarios" >
+        <div 
+            class="funcionario" 
+            *ngFor="let func of funcionarios; let i = index"
+            [ngClass]="func.ativo ? 'ativo' : 'inativo'"  
+        >
+            <p class="numero">{{i+1}}</p>
+            <p class="nome">Nome: {{func.nome}}</p>
+            <p class="cargo">Cargo: {{func.cargo}}</p>
+            <p class="nome">Status: {{func.ativo ? "Ativo":"Inativo"}}</p>
+            <button class="mudar-status" (click)="mudarStatus(i)">Mudar Status</button>
+        </div>
+    </div>
+
+    <button class="trocar" (click)="trocarTitulo()">Trocar Titulo</button>
+
+</div>
